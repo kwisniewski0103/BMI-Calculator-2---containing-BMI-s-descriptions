@@ -1,0 +1,16 @@
+# 8. BMI Calculator 2 - containing BMI's descriptions (nested loops used):
+
+print("Welcome to your BMI calculator.")
+height = float(input("enter your height in cm: "))
+weight = float(input("enter your weight in kg: "))
+bmi = round(weight / (height ** 2 / 10000))
+if bmi >= 35:
+  print(f"Your BMI is {bmi}, you are clinically obese.")
+elif bmi >=  30:
+  print(f"Your BMI is {bmi}, you are obese.")
+elif bmi >= 25:
+  print(f"Your BMI is {bmi}, you are slightly overweight.")
+elif bmi >= 18.5:
+  print(f"Your BMI is {bmi}, you have a normal weight.")
+else:
+  print(f"Your BMI is {bmi}, you are underweight.")
